@@ -1,0 +1,6 @@
+<view class="add-page">
+  <view class='mask'>
+    <view class="start">系统需要您的授权，获取个人基本信息</view>
+    <button class="btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">确认</button>
+  </view>
+</view>

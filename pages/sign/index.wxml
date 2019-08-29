@@ -1,0 +1,33 @@
+<view>
+  <loading hidden="{{hiddenLoading}}">
+    加载中...
+  </loading>
+</view>
+
+<view class="sign-page" hidden='{{hiddenMyInfo}}'>
+
+    <block>
+        <view class="module-b">
+            <block>
+                <view class="tit">
+                    <block>
+                        <text>{{showText}}</text>
+                    </block>
+                </view>
+                <view class="weekday">
+                    <block>
+                        <text>{{weekday}}</text>
+                    </block>
+                </view>
+                <view class="num">
+                    {{currTime}}
+                </view>
+                <view class="sign-wrap" bindtap="signTask">
+                    <view class="sign-btn"><image src="../../image/sign_btn_{{btnState}}.png"></image></view>
+                </view>
+            </block>
+
+        </view>
+    </block>
+    
+</view>

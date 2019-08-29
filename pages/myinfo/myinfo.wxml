@@ -1,0 +1,55 @@
+<view>
+  <loading hidden="{{hiddenLoading}}">
+    加载中...
+  </loading>
+</view>
+
+<view class="add-page" hidden='{{hiddenMyInfo}}'>
+
+    <view class="mod-a">
+        <view class="header">
+            
+            <image class="userinfo-avatar" src="{{dakaUser.HeaderPhoto}}"></image>
+            <view>{{dakaUser.NickName}}</view>
+            
+        </view>
+    </view>
+
+    <view class="mod-a mt20">
+        <view class="mod">
+            <text class="key">真实姓名</text>
+            <text class="value">{{dakaUser.RealName}}</text>
+        </view>
+
+        <view class="mod">
+            <text class="key">手机号码</text>            
+            <text class="value">{{dakaUser.Mobile}}</text>
+        </view>
+
+        <view class="mod">
+            <text class="key">部门</text>            
+            <text class="value">{{dakaUser.Department}}</text>
+        </view>
+
+        <view class="mod">
+            <text class="key">职位</text>            
+            <text class="value">{{dakaUser.Job}}</text>
+        </view>        
+
+        <view class="mod t-early">
+            <text class="key">手机品牌</text>
+            <text class="value">{{dakaUser.PhoneBrand}}</text>
+        </view>
+
+        <view class="mod t-early">
+            <text class="key">手机型号</text>
+            <text class="value">{{dakaUser.PhoneModel}}</text>
+        </view>
+
+        <view class="mod t-early">
+            <text class="key">状态</text>
+            <text class="value">{{dakaUser.Status}}</text>
+        </view>
+
+    </view>
+</view>

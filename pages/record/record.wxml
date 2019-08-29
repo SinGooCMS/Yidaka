@@ -1,0 +1,103 @@
+<view>
+  <loading hidden="{{hiddenLoading}}">
+    加载中...
+  </loading>
+</view>
+
+<!-- 记录页 -->
+<view class="record-page" hidden='{{hiddenMyInfo}}'>
+      <view class="t-inner">
+          <view class="t-content-wrap">
+
+              <view class="t-content t-content-show">
+
+                  <view class="t-time mt20">
+                      <view class="start">
+                          <text class="key">起始</text>
+                          <picker mode="date" value="{{startDay}}" bindchange="sStartDateChange">
+                              <view class="date">{{startDay}}<image class="arrow-d" src="../../image/arrow-d-0.png"></image></view>
+                          </picker>
+                      </view>
+                      <view class="pipe"></view>
+                      <view class="end">
+                          <text class="key">截止</text>
+                          <picker mode="date" value="{{endDay}}" bindchange="sEndDateChange">
+                              <view class="date">{{endDay}}<image class="arrow-d" src="../../image/arrow-d-0.png"></image></view>
+                          </picker>
+                      </view>
+                  </view>
+
+                  <!-- 统计 -->
+                  <view class="total mt20">
+                      <view class="c-item">
+                          <text class="num">{{signNormal}}</text>
+                          <text class="txt">打卡</text>
+                      </view>
+                      <view class="pipe"></view>
+                      <view class="c-item">
+                          <text class="num">{{signLate}}</text>
+                          <text class="txt">迟到</text>
+                      </view>                    
+                      <view class="pipe"></view>
+                      <view class="c-item">
+                          <text class="num">{{somethingLeave}}</text>
+                          <text class="txt">请假</text>
+                      </view>
+                      <view class="pipe"></view>
+                      <view class="c-item">
+                          <text class="num">{{sickLeave}}</text>
+                          <text class="txt">病假</text>
+                      </view>
+                      <view class="pipe"></view>
+                      <view class="c-item">
+                          <text class="num">{{absent}}</text>
+                          <text class="txt">旷工</text>
+                      </view>
+                  </view>
+
+                  <view class="s-menu-content s-menu-show">
+                      <view class="record-list late-list">
+                          <view class="thead">
+                              <view class="th" style='width:40%'>
+                                  <text>日期</text>
+                              </view>
+                              <view class="th" style='width:35%'>
+                                  <text>打卡时间</text>
+                              </view>
+                              <view class="th" style='width:25%'>
+                                  <text>状态</text>
+                              </view>
+                          </view>
+
+                          <view class="tbody">
+                          
+                              <block wx:if="{{sRecordList.length == 0}}">
+                                  <view class="empty-tips">
+                                      <text>当前没有记录</text>    
+                                  </view>
+                              </block>
+                              <block wx:else>
+                                  <block wx:for="{{recordList}}">
+                                      <view class="tr">
+                                          <view class="td" style='width:40%'>
+                                              <text>{{item.Sign_Date}}</text>
+                                          </view>
+                                          <view class="td" style='width:35%'>
+                                              <text>{{item.Sign_Time}}</text>
+                                          </view>
+                                          <view class="td" style='width:25%'>
+                                              <text>{{item.Sign_State}}</text>
+                                          </view>
+                                      </view>
+                                  </block>
+                              </block>
+                              
+                          </view>
+                      </view>
+                  </view>
+
+              </view>
+              
+          </view>
+      </view>
+</view>

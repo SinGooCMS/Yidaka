@@ -1,0 +1,41 @@
+.mt20{
+  margin-top: 20rpx;
+}
+
+.add-page{
+  display: flex;
+  flex-direction: column;
+  font-size: 32rpx;
+  color: #676767;
+  padding: 30rpx 0;
+}
+
+.mod-a{
+  padding: 0 20rpx;
+  border: 1px solid #f0f0f0;
+  background-color: #fff;
+}
+
+.mod{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90rpx;
+  padding: 0 20rpx;
+  border-bottom: 1px solid #ddd;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 150rpx;
+  padding: 0 20rpx;
+}
+.userinfo-avatar {
+  border-radius: 128rpx;
+  width: 128rpx;
+  height: 128rpx;
+}

@@ -1,0 +1,128 @@
+.sign-page{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 26rpx;
+  height: 100%;
+  overflow: hidden;
+}
+.s-arr-btn{
+  position: absolute;
+  top: 60%;
+}
+.s-l{left: 80rpx;}
+.s-r{right: 80rpx;}
+
+.s-arr-btn .s-arr{
+  width: 44rpx;
+  height: 65rpx;
+}
+.unable{
+  opacity: 0.4
+}
+
+swiper{
+  height: 260rpx;
+}
+swiper-item{
+  display: block;
+  height: 260rpx;
+}
+
+.distance{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between; 
+}
+
+.sign-wrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top:20px;
+}
+.sign-btn image{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: none;
+  width: 360rpx;
+  height: 363rpx;
+  text-align: center;
+  background: url('../../image/sign_btn_0.png') no-repeat;
+  background-size: 360rpx 363rpx;
+}
+.sign-btn::after{
+  border: none;
+}
+.module-b{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120rpx;
+}
+.module-b .tit{
+  font-size: 40rpx;
+  color: #959595;
+}
+.module-b .weekday{
+  font-size: 26rpx;
+  color: #a5a5a5;
+  margin: 10px 0 5px 0;
+}
+.module-b .success{
+  color:  #2fcc85;
+}
+.module-b .num{
+  font-size: 100rpx;
+  color: #2fcc85;
+}
+.module-b .unable{
+  color: #b2b2b2;
+}
+
+.overlay{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6666;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.arrow-d{
+  width: 17rpx;
+  height: 9rpx;
+  margin-left: 10rpx;
+}
+
+.time-b .value{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 334rpx;
+  height: 58rpx;
+  padding-right: 20rpx;
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8rpx;
+}
+.time-b .value .date{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.submit-btn{
+  font-size: 36rpx;
+  color: #fff;
+  background-color: #2fcc85;
+}
+.button-hover{
+  background-color: #2caf6d;
+  color: #96d7b6;
+}
